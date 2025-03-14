@@ -13,8 +13,8 @@ Se te proporciona el mockup adjunto y los siguientes requisitos:
 
 Los endpoints a utilizar para obtener los datos correspondientes son los siguientes:
 - GET `/position/:id/interviewflow`: Este endpoint devuelve información sobre el proceso de contratación para una determinada posición. Nos serán útiles los siguientes campos:
-  - `positionName`
-  - `interviewFlow` -> `interviewSteps` -> `name`
+  - `interviewFlow` -> `positionName`
+  - `interviewFlow` -> `interviewFlow` -> `interviewSteps` -> `name`
 - GET `/position/:id/candidates`: Este endpoint devuelve todos los candidatos en proceso para una determinada posición, es decir, todas las aplicaciones para un determinado `positionID`. Nos serán útiles los siguientes campos:
   - `fullName`
   - `currentInterviewStep` (name)

@@ -1,7 +1,7 @@
 ---
 description: Frontend Coding Guidelines
 globs: frontend/
-alwaysApply: false
+alwaysApply: true
 ---
 1. Todo código implementado debe modularizarse.
 2. El código debe organizarse siguiendo una estructura coherente. En la carpeta `src`, el código se encuentra estructurado en las siguientes carpetas: `assets`, `components` y `services`.
