@@ -4,7 +4,7 @@ const API_URL = 'http://localhost:3010';
 
 /**
  * Obtiene el flujo de entrevista para una posición específica
- * @param {string} positionId - ID de la posición
+ * @param {number} positionId - ID de la posición
  * @returns {Promise} - Promesa con los datos del flujo de entrevista
  */
 export const getInterviewFlow = async (positionId) => {
@@ -19,7 +19,7 @@ export const getInterviewFlow = async (positionId) => {
 
 /**
  * Obtiene los candidatos para una posición específica
- * @param {string} positionId - ID de la posición
+ * @param {number} positionId - ID de la posición
  * @returns {Promise} - Promesa con los datos de los candidatos
  */
 export const getPositionCandidates = async (positionId) => {

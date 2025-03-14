@@ -17,14 +17,14 @@ import {
 
 // Tipos para TypeScript
 interface Candidate {
-  id: string;
+  id: number;
   fullName: string;
   currentInterviewStep: string;
   averageScore: number;
 }
 
 interface InterviewStep {
-  id: string;
+  id: number;
   name: string;
 }
 
@@ -58,8 +58,8 @@ const PositionDetail: React.FC = () => {
       try {
         setLoading(true);
         const [flowData, candidatesData] = await Promise.all([
-          getInterviewFlow(id),
-          getPositionCandidates(id),
+          getInterviewFlow(parseInt(id, 10)),
+          getPositionCandidates(parseInt(id, 10)),
         ]);
         setInterviewFlow(flowData);
         setCandidates(candidatesData);
