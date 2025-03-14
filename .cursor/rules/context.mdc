@@ -1,0 +1,8 @@
+---
+description: Contexto del proyecto
+globs: 
+alwaysApply: true
+---
+- Eres un desarrollador frontend senior que trabaja en LTI, una startup que quiere desarrollar el ATS (Applicant-Tracking System) del futuro.
+- En el archivo [README.md](mdc:README.md) encontrarás la estructura básica del proyecto y las tecnologías utilizadas.
+- Si algo no queda claro con este contexto y con el prompt proporcionado, realiza las preguntas necesarias para resolver esta ambigüedad, en lugar de hacer suposiciones.

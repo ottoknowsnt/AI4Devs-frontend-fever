@@ -1,0 +1,13 @@
+---
+description: Frontend Coding Guidelines
+globs: frontend/
+alwaysApply: false
+---
+1. Todo código implementado debe modularizarse.
+2. El código debe organizarse siguiendo una estructura coherente. En la carpeta `src`, el código se encuentra estructurado en las siguientes carpetas: `assets`, `components` y `services`.
+3. Se deben documentar las partes del código que resulten más complejas de comprender.
+4. El diseño de la aplicación debe seguir el principio KISS.
+5. EL diseño debe ser responsive: debe verse correctamente en cualquier tipo de pantalla, ya sea de ordenador o de móvil.
+6. El diseño debe ser consistente a través de todas las vistas de la aplicación.
+7. En el caso de ya existir una librería de componentes o framework que proporcione lo que se quiere implementar, se deberá utilizar en lugar de implementarlo de cero.
+8. La aplicación debe seguir buenas prácticas de seguridad, implementando la validación y sanitización de entradas necesarias.
