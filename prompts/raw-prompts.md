@@ -21,3 +21,14 @@ Los endpoints a utilizar para obtener los datos correspondientes son los siguien
   - `averageScore`
 
 - Todavía no existe un endpoint para obtener todas las posiciones, así que mantén las posiciones mock de la vista listado, pero usa los datos reales de los dos endpoints anteriores para la nueva vista detalle.
+
+---
+
+Has recibido los siguientes requisitos nuevos del equipo de diseño:
+
+1. Se debe poder actualizar la fase en la que se encuentra un candidato arrastrando su tarjeta a otra columna.
+
+Los endpoints a utilizar para implementar esta funcionalidad son los siguientes:
+- PUT `/candidates/:id`: Este endpoint permite modificar la fase actual del proceso de entrevista en la que se encuentra un candidato específico, a través del siguiente cuerpo JSON:
+  - `applicationId`: id entero de la aplicación del candidato. Este campo se incluye en la información de cada candidato proporcionada por el endpoint GET `/position/:id/candidates`.
+  - `currentInterviewStep`: id de la fase a la que mover el candidato. Este campo se incluye en la información de cada fase proporcionada por el endpoint GET `/position/:id/interviewflow`.
