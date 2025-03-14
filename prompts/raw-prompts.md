@@ -12,10 +12,12 @@ Se te proporciona el mockup adjunto y los siguientes requisitos:
 6. Se debe mostrar el título de la posición en la parte superior, para dar contexto.
 
 Los endpoints a utilizar para obtener los datos correspondientes son los siguientes:
-- GET `/positions/:id/interviewFlow`: Este endpoint devuelve información sobre el proceso de contratación para una determinada posición. Nos serán útiles los siguientes campos:
+- GET `/position/:id/interviewflow`: Este endpoint devuelve información sobre el proceso de contratación para una determinada posición. Nos serán útiles los siguientes campos:
   - `positionName`
   - `interviewFlow` -> `interviewSteps` -> `name`
-- GET `/positions/:id/candidates`: Este endpoint devuelve todos los candidatos en proceso para una determinada posición, es decir, todas las aplicaciones para un determinado `positionID`. Nos serán útiles los siguientes campos:
+- GET `/position/:id/candidates`: Este endpoint devuelve todos los candidatos en proceso para una determinada posición, es decir, todas las aplicaciones para un determinado `positionID`. Nos serán útiles los siguientes campos:
   - `fullName`
   - `currentInterviewStep` (name)
   - `averageScore`
+
+- Todavía no existe un endpoint para obtener todas las posiciones, así que mantén las posiciones mock de la vista listado, pero usa los datos reales de los dos endpoints anteriores para la nueva vista detalle.
